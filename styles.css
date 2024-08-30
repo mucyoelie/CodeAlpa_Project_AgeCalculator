@@ -7,8 +7,8 @@
     margin-left: 30%;
     background-color:black;
     width: 40%;
-    height: 280px;
-    border-radius: 2%;
+    height: 200px;
+    border-radius: 10px;
     color: aliceblue;
 }
 .container{
@@ -27,11 +27,14 @@
     margin-top: 40%;
     margin-left: 10%;
     color: rgb(0,200,0);
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'poppin' ,sans-serif;
 }
 .input_division{
     background-color:inherit;
@@ -42,26 +45,33 @@
 }
 .input_division input[type="date"]{
     width: 60%;
-    height: 40%;
+    height: 50%;
     padding: auto;
-    margin-top: 6%;
-    border-radius: 6%;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-style:normal;
 }
 .input_division button{
     width: 25%;
-    height: 40%;
+    height: 50%;
     padding: auto;
-    margin-top: 6%;
-    border-radius: 6%; 
-    color: rgb(0,200,0) 
-
+    margin-top: 2%;
+    border-radius: 10px; 
+    color: rgb(255,255,255);
+    margin-left: 2%;
+}
+button{
+    background: rgb(0,127,0);
 }
 #result{
     color: white;
+    margin-left: 38%;
+    margin-top: 50px;
+    font-style: oblique;
 }
-@media(max-width:480px) {
+@media(min-width:320px) and (max-width:480px) {
   .Large_division{
-    width: 20rem;
+    width: 22rem;
     margin: auto;
   }
   .head_division {
@@ -74,4 +84,52 @@ margin-bottom: 5%;
 .head_division h1{
     font-size: 1.3rem;
 }
+.input_division button{
+    height: 3rem;
+    font-size: 1.2rem; 
+    width: 32%; 
+}
+.input_division input[type="date"]{
+    height: 3rem;
+    font-size: 1.2rem;
+}
+#result{
+    font-size: 0.8rem;
+    margin-left: 20%;
+    
+}
+.result{
+    background-color: inherit;
+    width: 80%;
+    margin-left: 10%;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+      .Large_division{
+        width: 45rem;
+        height: 30rem;
+        margin: auto;
+      }
+      .head_division {
+       background-color:inherit;
+    width: 30rem;
+    height: 3rem;
+    margin-bottom: 5%;
+    margin-left: auto;
+    
+    }
+    .head_division h1{
+        font-size: 2rem;
+    } 
+    .input_division button{
+        height: 4.2rem;
+        width: 10rem;
+        margin-left:12px;
+        font-size: 1.2rem;
+    }
+    .input_division input[type="date"]{
+        height: 4.2rem; 
+        width: 19rem; 
+        font-size: 1.5rem;
+    }
 }
